@@ -1,2 +1,2 @@
-# Cancer-research-statistical-analysis-for-Data-Visualization
+# Cancer-research-statistical-analysis
 Final project for UTSA Data Visualization Boot Camp
