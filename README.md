@@ -18,7 +18,7 @@ Thus, the goal is to classify whether the breast cancer is benign or malignant a
 •	The columns 3-32 contain 30 real-value features that have been computed from digitized images of the cell nuclei, which can be used to build a model to predict whether a tumor is benign or malignant.
 
 
-**Getting Started: Load libraries and set options**
+**Getting Started**
 
 Load Dataset:
 
@@ -34,16 +34,13 @@ The easiest being to request the first few records using the DataFrame data.head
 
 Now that we have a good intuitive sense of the data, Next step involves taking a closer look at attributes and data values. In this section, We are getting familiar with the data, which will provide useful knowledge for data pre-processing.
 
-**Data Exploration**
+Data Exploration an important step which takes place after engineering features and acquiring data. This is an important step data scientists to be able to understand the nature of the data. 
+The results of data exploration are used to understanf the structure of the data, the distribution and presence normal versus extreme values and identify interrelationships within the data set.
 
-Data Exploration is a very important step which takes place after feature engineering and acquiring data and it should be done before modeling. This is because it is very important for a data scientist to be able to understand the nature of the data without making assumptions. The results of data exploration can be extremely useful in grasping the structure of the data, the distribution of the values, and the presence of extreme values and interrelationships within the data set.
-Descriptive statistics
-Summary statistics are measurements meant to describe data. In the field of descriptive statistics, there are many summary measurements)
-The skew result show a positive (right) or negative (left) skew. Values closer to zero show less skew.
-From the graphs, we can see that radius_mean, perimeter_mean, area_mean, concavity_mean and concave_points_mean are useful in predicting cancer type due to the distinct grouping between malignant and benign cancer types in these features. We can also see that area_worst and perimeter_worst are also quite useful.
+From the the visualizations, we can see that radius_mean, perimeter_mean, area_mean, concavity_mean and concave_points_mean are useful in predicting cancer type due to the distinct grouping between malignant and benign cancer types in these features. We can also see that area_worst and perimeter_worst are also quite useful.
 
 
-Check binary encoding from NB1 to confirm the coversion of the diagnosis categorical data into numeric, where:
+Check encoding confirm the coversion of diagnosis categorical data into numeric, where:
 
 •	Malignant = 1
 •	Benign = 0 
@@ -54,12 +51,9 @@ Check binary encoding from NB1 to confirm the coversion of the diagnosis categor
 
 **Data Visualizations**
 
-One of the main goals of visualizing the data here is to observe which features are most helpful in predicting malignant or benign cancer. The other is to see general trends that may aid us in model selection and hyper parameter selection.
-Visualize distribution of data via tableau
-Observation
+One of the main goals of visualizing the data here is to observe which features are most helpful in predicting malignant or benign cancer. The other is to see general trends that might help with selection of a model and other parameters.
 
-
-
+Tableau Link : https://public.tableau.com/app/profile/loraine.gomez/viz/BreastCancerAnalysis_16704027941520/BOXA
 
 
 
@@ -71,6 +65,7 @@ We used the clean dataset and checked the headings, dropped Unnamed = 0 column
 Assessing Model Accuracy: Split data into training and test sets
 The simplest method to evaluate the performance of a machine learning algorithm is to use different training and testing datasets. Here our group will:
 
+
 •	Split the available data into a training set and a testing set. (70% training, 30% test)
 •	Train the algorithm
 •	make predictions 
@@ -79,6 +74,7 @@ The simplest method to evaluate the performance of a machine learning algorithm 
 
 **Building Models**
 
+
 Logistic Regression:
 
 Decision Tree:
@@ -86,8 +82,9 @@ Decision Tree:
 Random Forest Classifiers(3 models):
 
 
-**TABLEAU LINK:** https://public.tableau.com/app/profile/loraine.gomez/viz/BreastCancerAnalysis_16704027941520/BOXA
 
+
+Data Source : (https://archivebeta.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)
 
 
 
