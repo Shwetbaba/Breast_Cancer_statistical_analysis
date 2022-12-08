@@ -13,27 +13,29 @@ Breast cancer is the most common malignancy among women, accounting for nearly 1
 Given breast cancer results from breast fine needle aspiration (FNA) test (is a quick and simple procedure to perform, which removes some fluid or cells from a breast lesion or cyst (a lump, sore or swelling) with a fine needle similar to a blood sample needle). Since this build a model that can classify a breast cancer tumor using two training classification:
 
 •	1= Malignant 
-•	0= Benign 
+•	0= Benign
 
-**1.2 Objective**
-Since the labels in the data are discrete, the predication falls into two categories, (i.e. Malignant or benign). In machine learning this is a classification problem.
+**Goal for this project**
+
+The predication of this dataset falls into two categories, (i.e. Malignant or benign). In machine learning this is a classification problem.
+
 Thus, the goal is to classify whether the breast cancer is benign or malignant and predict the recurrence and non-recurrence of malignant cases after a certain period. To achieve this we have used machine learning classification methods to fit a function that can predict the discrete class of new input.
-1.3 Identify data sources
-•	The first two columns in the dataset store the unique ID numbers of the samples and the corresponding diagnosis (M=malignant, B=benign), respectively.
-•	The columns 3-32 contain 30 real-value features that have been computed from digitized images of the cell nuclei, which can be used to build a model to predict whether a tumor is benign or malignant.
+
+**Identify data sources**
+
+The first two columns in the dataset store the unique ID numbers of the samples and the corresponding diagnosis (M=malignant, B=benign), respectively.
+The columns 3-32 contain 30 real-value features that have been computed from digitized images of the cell nuclei, which can be used to build a model to predict whether a tumor is benign or malignant.
 
 
-**Getting Started**
+## **Getting Started**
 
-Load Dataset:
+**Load Dataset:**
 
 First, we download and load the .CSV file using Pandas.read_csv function.
 
 **Inspecting the data**
 
-**The first step is to visually inspect the new data set. There are multiple ways to achieve this:**
-
-The easiest being to request the first few records using the DataFrame data.head()* method. By default, “df.head()” returns the first 5 rows from the DataFrame object df (excluding the header row).
+The first step is to visually inspect the new data set.The easiest being to request the first few records using the DataFrame data.head()* method. By default, “df.head()” returns the first 5 rows from the DataFrame object df (excluding the header row).
 
 **Data Analysis**
 
@@ -62,9 +64,9 @@ Tableau Link : https://public.tableau.com/app/profile/loraine.gomez/viz/BreastCa
 
 
 
-**Machine Learning**
+## **Machine Learning**
 
-Introduction:
+**Introduction:**
 
 We used the clean dataset and checked the headings, dropped Unnamed = 0 column
 Assessing Model Accuracy: Split data into training and test sets
@@ -77,8 +79,8 @@ The simplest method to evaluate the performance of a machine learning algorithm 
 •	use confusion matrix
 •	evaluate the predictions against the expected results.
 
-**Building Models**
 
+**Building Models**
 
 Logistic Regression:
 
@@ -86,8 +88,9 @@ Decision Tree:
 
 Random Forest Classifiers(3 models):
 
+**Conclusion**
 
-
+Based on the accuracy values, we can say the Random Forest Classifier model (Model no.2 with n_estimators = 500) is the most accurate with 97% accuracy.
 
 Data Source : (https://archivebeta.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)
 
