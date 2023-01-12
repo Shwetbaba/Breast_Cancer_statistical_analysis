@@ -76,7 +76,6 @@ The simplest method to evaluate the performance of a machine learning algorithm 
 •	Split the available data into a training set and a testing set. (70% training, 30% test)
 •	Train the algorithm
 •	make predictions 
-•	use confusion matrix
 •	evaluate the predictions against the expected results.
 
 
